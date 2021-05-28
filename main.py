@@ -11,7 +11,7 @@ def detected_callback():
 
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
-    detector = snowboydecoder.HotwordDetector("snowboy/resources/zijinshan.dmdl", sensitivity=0.5, audio_gain=1)
+    detector = snowboydecoder.HotwordDetector("snowboy/resources/zijinshan.pmdl", sensitivity=0.5, audio_gain=1)
     detector.start(detected_callback)
 
 
