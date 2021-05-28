@@ -347,7 +347,7 @@ class HotwordDetector(object):
                     if callback is not None:
                         callback()
 
-                    if audio_recorder_callback is not None and status == 1 and utils.is_proper_time():
+                    if audio_recorder_callback is not None and status == 1:
                         state = "ACTIVE"
                     continue
 
