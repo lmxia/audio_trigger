@@ -22,12 +22,12 @@ def detected_callback():
 
 def audioRecorderCallback(fname):
     print(fname)
-    utils.clean()
     global interrupted
     interrupted = True
+    Player.play(constants.getData(fname), onCompleted=utils.clean, wait=True)
 
 
-def _interrupt_callback(self):
+def _interrupt_callback():
     global interrupted
     return interrupted
 
